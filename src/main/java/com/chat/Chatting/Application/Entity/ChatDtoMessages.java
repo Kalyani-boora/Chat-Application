@@ -53,7 +53,6 @@ public class ChatDtoMessages {
         this.sender = sender;
     }
 
-    // Corrected Builder Class
     public static class Builder {
         private MessageType type;
         private String content;
