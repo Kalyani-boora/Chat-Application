@@ -35,12 +35,6 @@ public class ChatController {
 	        return msg;
 	    }
 
-/*
-	@MessageMapping("/chat.sendMessage")
-	@SendTo("/topic/public")
-public ChatDtoMessages sendMsg(@Payload ChatDtoMessages msg) {
-		return msg;
-}*/
 	@MessageMapping("/chat.addUser")
 	@SendTo("/topic/public")
 public ChatDtoMessages addUser(@Payload ChatDtoMessages msg,SimpMessageHeaderAccessor headerAccessor) {
